@@ -1,0 +1,72 @@
+# Opersai komparasi / perbandingan
+
+# hasil operasi selalu bertipe Boolean (TRUE/FALSE)
+
+# >,<,==,>=,<=,!=,is,is dan not
+
+a = 4
+b = 2
+
+# lebih besar dari
+print("==== lebih besar dari (>)====")
+hasil = a > 3 # TRUE
+print(a,'>',3,'=',hasil)
+hasil = b > 3 # FALSE
+print(b,'>',3,'=',hasil)
+hasil = b > 2 # FALSE
+
+# kurang dari
+print("==== kurang dari (<)====")
+hasil = a < 3 # TRUE
+print(a,'<',3,'=',hasil)
+hasil = b < 3 # FALSE
+print(b,'<',3,'=',hasil)
+hasil = b < 2 # FALSE
+
+# kurang dari sama dengan
+print("==== kurang dari sama dengan (<)====")
+hasil = a <= 3 # FALSE 
+print(a,'<=',3,'=',hasil)
+hasil = b <= 3 # TRUE
+print(b,'<=',3,'=',hasil)
+hasil = b <= 2 # TRUE
+
+# lebih dari sama dengan
+print("==== lebih dari sama dengan (>)====")
+hasil = a >= 3 # TRUE
+print(a,'>=',3,'=',hasil)
+hasil = b >= 3 # FALSE
+print(b,'>=',3,'=',hasil)
+hasil = b >= 2 # TRUE
+
+# sama dengan (==)
+print("==== sama dengan (==)====")
+hasil = a == 3 # FALSE
+print(a,'==',3,'=',hasil)
+hasil = a == 4 # TRUE
+print(a,'==',4,'=',hasil)
+
+# tidak sama dengan (!=)
+print("==== tidak sama dengan (!=)====")
+hasil = a != 3 # TRUE
+print(a,'!=',3,'=',hasil)
+hasil = a != 4 # FALSE
+print(a,'!=',4,'=',hasil)
+
+# is sebagai komparasi 
+print("====objek identity (is)===="")
+x = 5
+y = 5
+hasil = x is y # TRUE
+print(x,'is',y,'=',hasil)
+print("nilai x =",x "id =",hex(id(x))")
+print("nilai y =",y "id =",hex(id(y))")
+
+# is dan not
+print("====objek identity (is dan not)====")
+x = 5
+y = 6
+hasil = x is not y # FALSE
+print(x,'is not',y,'=',hasil)
+print("nilai x =",x "id =",hex(id(x))")
+print("nilai y =",y "id =",hex(id(y))")
